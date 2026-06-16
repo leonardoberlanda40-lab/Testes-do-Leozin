@@ -117,35 +117,10 @@
             </footer>
         </div>
     </div>
-    <div id=\"khepri-overlay\" class=\"khepri-overlay\">
-        <div class=\"khepri-message\">USURPADOR</div>
+    <div id="khepri-overlay" class="khepri-overlay">
+        <div class="khepri-message">USURPADOR</div>
     </div>
 
-    <script>
-        const accessTrigger = document.querySelector('.access-trigger');
-        const overlay = document.getElementById('khepri-overlay');
-
-        accessTrigger.style.cursor = 'pointer';
-        accessTrigger.style.textDecoration = 'underline';
-        accessTrigger.style.transition = 'color 0.3s ease';
-
-        accessTrigger.addEventListener('mouseover', function() {
-            this.style.color = '#ff3333';
-        });
-
-        accessTrigger.addEventListener('mouseout', function() {
-            this.style.color = '#ff6600';
-        });
-
-        accessTrigger.addEventListener('click', function(e) {
-            e.preventDefault();
-            overlay.classList.add('active');
-            document.body.style.overflow = 'hidden';
-        });
-
-        overlay.addEventListener('click', function() {
-            this.classList.remove('active');
-            document.body.style.overflow = 'auto';
-        });
-    </script></body>
+    <script src="script.js"></script>
+</body>
 </html>
