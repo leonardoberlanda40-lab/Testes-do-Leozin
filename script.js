@@ -242,3 +242,4 @@ class KhepriOverlay {
 document.addEventListener('DOMContentLoaded', () => {
     new KhepriOverlay();
 });
+
